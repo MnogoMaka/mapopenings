@@ -1,0 +1,10 @@
+# dataset.yaml — конфигурация датасета для YOLO
+
+path: yolo_pipeline/dataset_0       # корневая папка датасета
+train: train   # путь к train-изображениям (относительно path)
+val:   val     # путь к val-изображениям
+
+nc: 2                 # количество классов
+names:
+  0: "class_0"
+  1: "class_1"

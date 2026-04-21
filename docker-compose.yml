@@ -5,7 +5,13 @@ services:
     ports:
       - "8050:8050"
     volumes:
-      - ./result.json:/app/result.json:ro
+      - ./result.json:/app/result.json
+      - ./screenshots:/app/screenshots
     environment:
       - OAUTH_TOKEN=${OAUTH_TOKEN}
+      - DB_HOST=${DB_HOST:-111.88.249.123}
+      - DB_PORT=${DB_PORT:-5432}
+      - DB_NAME=${DB_NAME:-postgres}
+      - DB_USER=${DB_USER:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD}
     restart: unless-stopped
