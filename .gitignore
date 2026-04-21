@@ -17,6 +17,7 @@ screenshots
 test_screenshots
 yolo_pipeline/best.pt
 download_oauth.py
+progress.json
 # C extensions
 *.so
 
