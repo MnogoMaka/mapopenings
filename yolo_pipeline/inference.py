@@ -7,14 +7,14 @@ from pathlib import Path
 # ============================================================
 
 # Путь к обученным весам
-MODEL = "runs/train/exp/weights/best.pt"
+MODEL = "yolo_pipeline/best.pt"
 
 # Источник для инференса:
 #   "photo.jpg"            — одно изображение
 #   "dataset/images/test/" — папка с изображениями
 #   "video.mp4"            — видеофайл
 #   0                      — вебкамера (целое число, не строка)
-SOURCE = "dataset/images/test/"
+SOURCE = "screenshots"
 
 # Размер изображения (должен совпадать с тем, что использовался при обучении)
 IMGSZ = 640
@@ -26,7 +26,7 @@ CONF = 0.25
 IOU = 0.45
 
 # Устройство: "0" — GPU, "cpu" — процессор
-DEVICE = "0"
+DEVICE = "cpu"
 
 # Сохранить изображения с нарисованными bbox (True/False)
 SAVE = True

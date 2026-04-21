@@ -11,6 +11,12 @@ table_oati_uved_order_raskopki.xlsx
 Копия table_echd_camera_solr_dds.xlsx
 Копия table_oati_uved_order_raskopki.xlsx
 runs
+output
+old_scr
+screenshots
+test_screenshots
+yolo_pipeline/best.pt
+download_oauth.py
 # C extensions
 *.so
 
